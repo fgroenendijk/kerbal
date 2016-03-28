@@ -7,7 +7,7 @@ GAME
 	linkCaption = 
 	Mode = CAREER
 	Status = 1
-	scene = 7
+	scene = 5
 	editor = None
 	flag = Squad/Flags/kerbal2
 	launchID = 175
@@ -88,10 +88,93 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 10305500.0793428
+		update = 10306163.9160821
 		version = 1.0.5
 		CONTRACTS
 		{
+			CONTRACT
+			{
+				guid = 312c270a-97de-4a30-9d63-5dc941bbaae0
+				type = SurveyContract
+				prestige = 0
+				seed = 1357134503
+				state = Active
+				agent = Experimental Engineering Group
+				deadlineType = Floating
+				expiryType = Floating
+				values = 85544.5547103882,113881188.458204,75749.9992847443,140516.242291927,78749.9964237213,0,8.571429,9,10391656.0707937,10306166.336082,124187354.794286,0
+				targetBody = 3
+				centerLatitude = -8.46995565044484
+				centerLongitude = 57.2553141774867
+				randomTopic = Minmus
+				dataName = observational
+				anomalyName = inconsistencies
+				reportName = reports
+				locationName = Minmus
+				focusedSurvey = False
+				targetBand = LOW
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 22000,0,3,3,0
+					targetBody = 3
+					actionDescription = Take a crew report
+					experiment = crewReport
+					flightThreshold = 2900
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 796788175
+					wpIndex = 0
+					wpTexture = report
+					wpLatitude = -33.330814623768
+					wpLongitude = 28.2211507259005
+					wpLandlocked = False
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 22000,0,3,3,0
+					targetBody = 3
+					actionDescription = Take a crew report
+					experiment = crewReport
+					flightThreshold = 6400
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 796788175
+					wpIndex = 1
+					wpTexture = report
+					wpLatitude = -13.451915841645
+					wpLongitude = 35.1143529249621
+					wpLandlocked = False
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 22000,0,3,3,0
+					targetBody = 3
+					actionDescription = Take a crew report
+					experiment = crewReport
+					flightThreshold = 7500
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 796788175
+					wpIndex = 2
+					wpTexture = report
+					wpLatitude = -6.00945200376574
+					wpLongitude = 49.538548948964
+					wpLandlocked = False
+				}
+			}
 			CONTRACT
 			{
 				guid = 1a0b8cf4-a5cd-4c0b-84d2-b7eea7f4695b
@@ -172,52 +255,22 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = c7574db7-ffb0-4273-80ab-30dc6783022b
-				type = TourismContract
+				guid = c456f163-795b-49d0-9a2c-b7d1b0b7ad42
+				type = PlantFlag
 				prestige = 0
-				seed = -32582314
+				seed = 1589107995
 				state = Active
-				agent = FLOOYD Dynamics Research Labs
+				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
 				deadlineType = Floating
 				expiryType = Floating
-				values = 108000,46008000,0,0,0,0,19.04762,10,10401436.0993139,10301145.1549665,56309145.1549665,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = True
-				tourists = Dedie Kerman|Debchell Kerman
+				values = 40754.7137260437,108509425.295591,53240.73985219,140972.213467514,60374.9972581863,0,14.96471,6.862745,10346882.569809,10306166.336082,118815591.631673,0
+				body = 3
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = PlantFlag
 					state = Incomplete
-					values = 9750,0,0,0,0
-					kerbalName = Dedie Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Dedie Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					values = 9750,0,0,0,0
-					kerbalName = Debchell Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Debchell Kerman
-					}
+					values = 0,0,0,0,0
+					body = 3
 				}
 			}
 			CONTRACT
@@ -238,44 +291,6 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					body = 2
-				}
-			}
-			CONTRACT
-			{
-				guid = abc65327-6b17-4ae2-a027-12e5ead894aa
-				type = RecoverAsset
-				prestige = 0
-				seed = -2140854949
-				state = Active
-				agent = Ionic Symphonic Protonic Electronics
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,46008000,23400,53460,23400,0,9,9,10343715.5046688,10301145.1549665,56309145.1549665,0
-				targetBody = 1
-				kerbalName = Paca Kerman
-				partName = Large.Crewed.Lab
-				partID = 1205719049
-				recoveryLocation = 1
-				recoveryType = 1
-				gender = 2
-				PARAM
-				{
-					name = AcquireCrew
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					title = Save Paca Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Recover Paca Kerman on Kerbin
-					failOn = All
-					winOn = All
-					kerbal = Paca Kerman
 				}
 			}
 			CONTRACT
@@ -1500,6 +1515,92 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
+				guid = 2b349a52-a2f7-4a0a-95ed-a6d5b15a0b47
+				type = SurveyContract
+				prestige = 0
+				seed = 1060125086
+				state = Completed
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,46008000,30000,53000,30000,0,9,9,402512.711868474,386256.435040942,46394256.4350409,0
+				targetBody = 1
+				centerLatitude = 3.85741429243144
+				centerLongitude = 279.510815764164
+				randomTopic = Kerbin
+				dataName = observational
+				anomalyName = inconsistencies
+				reportName = reports
+				locationName = Kerbin
+				focusedSurvey = False
+				targetBand = NONE
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Take an EVA report
+					experiment = evaReport
+					flightThreshold = 18800
+					band = 1
+					clusterState = SINGLE
+					verified = True
+					contextual = False
+					wpSeed = 1278211854
+					wpIndex = 0
+					wpTexture = eva
+					wpLatitude = 3.87423372147033
+					wpLongitude = 279.447798085024
+					wpLandlocked = True
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Take a crew report
+					experiment = crewReport
+					flightThreshold = 18300
+					band = 2
+					clusterState = SINGLE
+					verified = True
+					contextual = False
+					wpSeed = 1278211854
+					wpIndex = 1
+					wpTexture = report
+					wpLatitude = 1.14268003985775
+					wpLongitude = 277.573698050476
+					wpLandlocked = False
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Take a crew report
+					experiment = crewReport
+					flightThreshold = 19600
+					band = 2
+					clusterState = SINGLE
+					verified = True
+					contextual = False
+					wpSeed = 1278211854
+					wpIndex = 2
+					wpTexture = report
+					wpLatitude = 8.18834127942561
+					wpLongitude = 277.151447517919
+					wpLandlocked = False
+				}
+			}
+			CONTRACT_FINISHED
+			{
 				guid = b70e6e56-36ad-4146-8f13-e24f804f926c
 				type = SurveyContract
 				prestige = 2
@@ -1628,23 +1729,23 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 2b349a52-a2f7-4a0a-95ed-a6d5b15a0b47
+				guid = a3bb66b4-1eb1-4719-b8ba-4809c86e1857
 				type = SurveyContract
 				prestige = 0
-				seed = 1060125086
+				seed = 1457316520
 				state = Completed
 				agent = Research & Development Department
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,46008000,30000,53000,30000,0,9,9,402512.711868474,386256.435040942,46394256.4350409,0
-				targetBody = 1
-				centerLatitude = 3.85741429243144
-				centerLongitude = 279.510815764164
-				randomTopic = Kerbin
+				values = 86400,92016000,60000,106000,60000,0,9,9,1152586.97397186,1066261.55397194,93082261.5539719,0
+				targetBody = 2
+				centerLatitude = -48.3273650105106
+				centerLongitude = 163.764205101768
+				randomTopic = the Mun
 				dataName = observational
 				anomalyName = inconsistencies
 				reportName = reports
-				locationName = Kerbin
+				locationName = the Mun
 				focusedSurvey = False
 				targetBand = NONE
 				contextual = False
@@ -1654,40 +1755,19 @@ GAME
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Take an EVA report
-					experiment = evaReport
-					flightThreshold = 18800
-					band = 1
-					clusterState = SINGLE
-					verified = True
-					contextual = False
-					wpSeed = 1278211854
-					wpIndex = 0
-					wpTexture = eva
-					wpLatitude = 3.87423372147033
-					wpLongitude = 279.447798085024
-					wpLandlocked = True
-				}
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					targetBody = 1
+					targetBody = 2
 					actionDescription = Take a crew report
 					experiment = crewReport
-					flightThreshold = 18300
-					band = 2
-					clusterState = SINGLE
+					flightThreshold = 11300
+					band = 3
+					clusterState = MIXED
 					verified = True
 					contextual = False
-					wpSeed = 1278211854
-					wpIndex = 1
+					wpSeed = -2034737445
+					wpIndex = 0
 					wpTexture = report
-					wpLatitude = 1.14268003985775
-					wpLongitude = 277.573698050476
+					wpLatitude = -62.5240997750211
+					wpLongitude = 129.861928721852
 					wpLandlocked = False
 				}
 				PARAM
@@ -1696,19 +1776,40 @@ GAME
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					targetBody = 1
+					targetBody = 2
 					actionDescription = Take a crew report
 					experiment = crewReport
-					flightThreshold = 19600
-					band = 2
-					clusterState = SINGLE
+					flightThreshold = 10000
+					band = 3
+					clusterState = MIXED
 					verified = True
 					contextual = False
-					wpSeed = 1278211854
+					wpSeed = -2034737445
+					wpIndex = 1
+					wpTexture = report
+					wpLatitude = -60.4393593447104
+					wpLongitude = 191.413615078334
+					wpLandlocked = False
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 2
+					actionDescription = Take a crew report
+					experiment = crewReport
+					flightThreshold = 8600
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -2034737445
 					wpIndex = 2
 					wpTexture = report
-					wpLatitude = 8.18834127942561
-					wpLongitude = 277.151447517919
+					wpLatitude = -26.635141902496
+					wpLongitude = 170.988075302796
 					wpLandlocked = False
 				}
 			}
@@ -1795,92 +1896,6 @@ GAME
 					wpTexture = report
 					wpLatitude = -45.1331695634283
 					wpLongitude = 7.90064539270284
-					wpLandlocked = False
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = a3bb66b4-1eb1-4719-b8ba-4809c86e1857
-				type = SurveyContract
-				prestige = 0
-				seed = 1457316520
-				state = Completed
-				agent = Research & Development Department
-				deadlineType = Floating
-				expiryType = Floating
-				values = 86400,92016000,60000,106000,60000,0,9,9,1152586.97397186,1066261.55397194,93082261.5539719,0
-				targetBody = 2
-				centerLatitude = -48.3273650105106
-				centerLongitude = 163.764205101768
-				randomTopic = the Mun
-				dataName = observational
-				anomalyName = inconsistencies
-				reportName = reports
-				locationName = the Mun
-				focusedSurvey = False
-				targetBand = NONE
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					targetBody = 2
-					actionDescription = Take a crew report
-					experiment = crewReport
-					flightThreshold = 11300
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -2034737445
-					wpIndex = 0
-					wpTexture = report
-					wpLatitude = -62.5240997750211
-					wpLongitude = 129.861928721852
-					wpLandlocked = False
-				}
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					targetBody = 2
-					actionDescription = Take a crew report
-					experiment = crewReport
-					flightThreshold = 10000
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -2034737445
-					wpIndex = 1
-					wpTexture = report
-					wpLatitude = -60.4393593447104
-					wpLongitude = 191.413615078334
-					wpLandlocked = False
-				}
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					targetBody = 2
-					actionDescription = Take a crew report
-					experiment = crewReport
-					flightThreshold = 8600
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -2034737445
-					wpIndex = 2
-					wpTexture = report
-					wpLatitude = -26.635141902496
-					wpLongitude = 170.988075302796
 					wpLandlocked = False
 				}
 			}
@@ -2132,26 +2147,26 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 150fd084-6c5c-47f7-9054-adfc2278725c
+				guid = 2e1d6ff5-3056-4845-97e0-ceb3d90ee4cc
 				type = TourismContract
 				prestige = 0
-				seed = -1625421536
+				seed = -128107596
 				state = Completed
-				agent = WinterOwl Aircraft Emporium
+				agent = Kerbal Motion LLC
 				deadlineType = Floating
 				expiryType = Floating
-				values = 63219.5137023926,44885854.7286987,0,0,0,0,20.18724,9.708738,449016.294665913,393545.327565465,45279400.0562642,0
+				values = 129600,46008000,0,0,0,0,20,10,138996.142929158,11025.8765754169,46019025.8765754,0
 				gender = 2
 				preposition = right here on Kerbin
 				homeDestinations = False
-				tourists = Elinne Kerman
+				tourists = Eriselle Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Elinne Kerman
+					kerbalName = Eriselle Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -2160,109 +2175,7 @@ GAME
 						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Elinne Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 01b4bd4e-dfea-45d3-99bb-0476354abf3c
-				type = TourismContract
-				prestige = 0
-				seed = -1518566608
-				state = Completed
-				agent = Ionic Symphonic Protonic Electronics
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,46008000,0,0,0,0,20,10,23978.5618139635,3591.40069762963,46011591.4006976,0
-				gender = 2
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Sigbelle Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Sigbelle Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Sigbelle Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = cd2f50de-e215-433f-bcb4-a7014ede89ff
-				type = TourismContract
-				prestige = 0
-				seed = -386144098
-				state = Completed
-				agent = Goliath National Products
-				deadlineType = Floating
-				expiryType = Floating
-				values = 86400,46008000,0,0,0,0,20,10,97428.156575417,11756.818457754,46019756.8184578,0
-				gender = 2
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Clauly Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Clauly Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Clauly Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 95ff5a29-540a-4117-aa60-0b8d6baf8215
-				type = TourismContract
-				prestige = 0
-				seed = 544817915
-				state = Completed
-				agent = C7 Aerospace Division
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,46008000,0,0,0,0,20,10,493136.566733427,393545.327565465,46401545.3275655,0
-				gender = 2
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Hayi Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Hayi Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Hayi Kerman
+						kerbalName = Eriselle Kerman
 					}
 				}
 			}
@@ -2302,26 +2215,26 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 2e1d6ff5-3056-4845-97e0-ceb3d90ee4cc
+				guid = e6875843-57df-4273-bcdb-05ad53f09995
 				type = TourismContract
 				prestige = 0
-				seed = -128107596
+				seed = -1488459235
 				state = Completed
-				agent = Kerbal Motion LLC
+				agent = C7 Aerospace Division
 				deadlineType = Floating
 				expiryType = Floating
-				values = 129600,46008000,0,0,0,0,20,10,138996.142929158,11025.8765754169,46019025.8765754,0
+				values = 43200,46008000,0,0,0,0,20,10,1394135.83804223,1351010.7780423,47359010.7780423,0
 				gender = 2
 				preposition = right here on Kerbin
 				homeDestinations = False
-				tourists = Eriselle Kerman
+				tourists = Kertina Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Eriselle Kerman
+					kerbalName = Kertina Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -2329,8 +2242,8 @@ GAME
 						state = Complete
 						values = 0,0,0,0,0
 						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Eriselle Kerman
+						targetType = Orbit
+						kerbalName = Kertina Kerman
 					}
 				}
 			}
@@ -2370,60 +2283,26 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = e6875843-57df-4273-bcdb-05ad53f09995
+				guid = 01b4bd4e-dfea-45d3-99bb-0476354abf3c
 				type = TourismContract
 				prestige = 0
-				seed = -1488459235
+				seed = -1518566608
 				state = Completed
-				agent = C7 Aerospace Division
+				agent = Ionic Symphonic Protonic Electronics
 				deadlineType = Floating
 				expiryType = Floating
-				values = 43200,46008000,0,0,0,0,20,10,1394135.83804223,1351010.7780423,47359010.7780423,0
+				values = 21600,46008000,0,0,0,0,20,10,23978.5618139635,3591.40069762963,46011591.4006976,0
 				gender = 2
 				preposition = right here on Kerbin
 				homeDestinations = False
-				tourists = Kertina Kerman
+				tourists = Sigbelle Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Kertina Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Kertina Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 36fbf5c5-fb38-49cc-8b56-a25e187572a9
-				type = TourismContract
-				prestige = 0
-				seed = -222354025
-				state = Completed
-				agent = Rokea Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 78374.4520891905,41734395.7374939,0,0,0,0,19.60241,10,758307.634147956,679984.842058814,42414380.5795527,0
-				gender = 2
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Eileen Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Eileen Kerman
+					kerbalName = Sigbelle Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -2432,8 +2311,32 @@ GAME
 						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Eileen Kerman
+						kerbalName = Sigbelle Kerman
 					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 150fd084-6c5c-47f7-9054-adfc2278725c
+				type = TourismContract
+				prestige = 0
+				seed = -1625421536
+				state = Completed
+				agent = WinterOwl Aircraft Emporium
+				deadlineType = Floating
+				expiryType = Floating
+				values = 63219.5137023926,44885854.7286987,0,0,0,0,20.18724,9.708738,449016.294665913,393545.327565465,45279400.0562642,0
+				gender = 2
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Elinne Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Elinne Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -2441,8 +2344,76 @@ GAME
 						state = Complete
 						values = 0,0,0,0,0
 						targetBody = 1
-						targetType = Orbit
-						kerbalName = Eileen Kerman
+						targetType = Suborbit
+						kerbalName = Elinne Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 95ff5a29-540a-4117-aa60-0b8d6baf8215
+				type = TourismContract
+				prestige = 0
+				seed = 544817915
+				state = Completed
+				agent = C7 Aerospace Division
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,46008000,0,0,0,0,20,10,493136.566733427,393545.327565465,46401545.3275655,0
+				gender = 2
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Hayi Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Hayi Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Hayi Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = cd2f50de-e215-433f-bcb4-a7014ede89ff
+				type = TourismContract
+				prestige = 0
+				seed = -386144098
+				state = Completed
+				agent = Goliath National Products
+				deadlineType = Floating
+				expiryType = Floating
+				values = 86400,46008000,0,0,0,0,20,10,97428.156575417,11756.818457754,46019756.8184578,0
+				gender = 2
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Clauly Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Clauly Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Clauly Kerman
 					}
 				}
 			}
@@ -2492,26 +2463,26 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 58e42452-0855-4e18-a9dd-b44a1856be9d
+				guid = 36fbf5c5-fb38-49cc-8b56-a25e187572a9
 				type = TourismContract
 				prestige = 0
-				seed = -1518566594
+				seed = -222354025
 				state = Completed
-				agent = STEADLER Engineering Corps
+				agent = Rokea Inc
 				deadlineType = Floating
 				expiryType = Floating
-				values = 129600,46008000,0,0,0,0,21.16191,11,131978.561813964,7242.99074162506,46015242.9907416,0
-				gender = 1
+				values = 78374.4520891905,41734395.7374939,0,0,0,0,19.60241,10,758307.634147956,679984.842058814,42414380.5795527,0
+				gender = 2
 				preposition = right here on Kerbin
 				homeDestinations = False
-				tourists = Patdan Kerman
+				tourists = Eileen Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Patdan Kerman
+					kerbalName = Eileen Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -2520,32 +2491,8 @@ GAME
 						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Patdan Kerman
+						kerbalName = Eileen Kerman
 					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 9cff7dd1-4a3e-4169-ad13-c7eddcaf8ffb
-				type = TourismContract
-				prestige = 0
-				seed = 701168990
-				state = Completed
-				agent = FLOOYD Dynamics Research Labs
-				deadlineType = Floating
-				expiryType = Floating
-				values = 86400,46008000,0,0,0,0,19.04762,10,470688.203480769,393545.327565465,46401545.3275655,0
-				gender = 1
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Eleny Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Eleny Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -2553,8 +2500,8 @@ GAME
 						state = Complete
 						values = 0,0,0,0,0
 						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Eleny Kerman
+						targetType = Orbit
+						kerbalName = Eileen Kerman
 					}
 				}
 			}
@@ -2623,6 +2570,74 @@ GAME
 						targetBody = 1
 						targetType = Suborbit
 						kerbalName = Sigvis Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 58e42452-0855-4e18-a9dd-b44a1856be9d
+				type = TourismContract
+				prestige = 0
+				seed = -1518566594
+				state = Completed
+				agent = STEADLER Engineering Corps
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,46008000,0,0,0,0,21.16191,11,131978.561813964,7242.99074162506,46015242.9907416,0
+				gender = 1
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Patdan Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Patdan Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Patdan Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 9cff7dd1-4a3e-4169-ad13-c7eddcaf8ffb
+				type = TourismContract
+				prestige = 0
+				seed = 701168990
+				state = Completed
+				agent = FLOOYD Dynamics Research Labs
+				deadlineType = Floating
+				expiryType = Floating
+				values = 86400,46008000,0,0,0,0,19.04762,10,470688.203480769,393545.327565465,46401545.3275655,0
+				gender = 1
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Eleny Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Eleny Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Eleny Kerman
 					}
 				}
 			}
@@ -2711,6 +2726,206 @@ GAME
 						targetBody = 1
 						targetType = Suborbit
 						kerbalName = Ribgun Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 36015b48-33eb-438f-89ba-9f2685f9e848
+				type = TourismContract
+				prestige = 1
+				seed = 1159355281
+				state = Completed
+				agent = FLOOYD Dynamics Research Labs
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,115020000,0,0,0,0,22.72727,12,4666822.85892337,4646506.05585079,119666506.055851,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Burbart Kerman|Calely Kerman|Maubie Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Burbart Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Burbart Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = Burbart Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Calely Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Calely Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Land
+						kerbalName = Calely Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Maubie Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Orbit
+						kerbalName = Maubie Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = Maubie Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 3489a312-0fed-4f60-84fc-2646832eeebe
+				type = TourismContract
+				prestige = 1
+				seed = 2114229719
+				state = Completed
+				agent = Goliath National Products
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,115020000,0,0,0,0,25,12,1254321.1171185,1213417.64539569,116233417.645396,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Lelin Kerman|Julree Kerman|Ceranne Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Lelin Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Suborbit
+						kerbalName = Lelin Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Lelin Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Julree Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = Julree Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Julree Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Ceranne Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Ceranne Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Suborbit
+						kerbalName = Ceranne Kerman
 					}
 				}
 			}
@@ -2956,454 +3171,26 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 36015b48-33eb-438f-89ba-9f2685f9e848
-				type = TourismContract
-				prestige = 1
-				seed = 1159355281
-				state = Completed
-				agent = FLOOYD Dynamics Research Labs
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,115020000,0,0,0,0,22.72727,12,4666822.85892337,4646506.05585079,119666506.055851,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Burbart Kerman|Calely Kerman|Maubie Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Burbart Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Burbart Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Burbart Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Calely Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Calely Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 2
-						targetType = Land
-						kerbalName = Calely Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Maubie Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 2
-						targetType = Orbit
-						kerbalName = Maubie Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Maubie Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 3489a312-0fed-4f60-84fc-2646832eeebe
-				type = TourismContract
-				prestige = 1
-				seed = 2114229719
-				state = Completed
-				agent = Goliath National Products
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,115020000,0,0,0,0,25,12,1254321.1171185,1213417.64539569,116233417.645396,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Lelin Kerman|Julree Kerman|Ceranne Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Lelin Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 2
-						targetType = Suborbit
-						kerbalName = Lelin Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Lelin Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Julree Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Julree Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Julree Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Ceranne Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Ceranne Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 2
-						targetType = Suborbit
-						kerbalName = Ceranne Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 832846bf-d0a8-409d-abfe-31c807444364
+				guid = 74f429dc-c34e-4df2-b601-1bfa582e8a4d
 				type = TourismContract
 				prestige = 0
-				seed = -1507227582
-				state = Completed
-				agent = STEADLER Engineering Corps
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,46008000,0,0,0,0,21.16191,11,1127520.08499346,1066373.79397203,47074373.793972,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Bilmund Kerman|Mitgan Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Bilmund Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Bilmund Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Bilmund Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Mitgan Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Mitgan Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Mitgan Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = e75e13af-2dba-487e-8182-7f391f44c50b
-				type = TourismContract
-				prestige = 0
-				seed = 1060125075
-				state = Completed
-				agent = WinterOwl Aircraft Emporium
-				deadlineType = Floating
-				expiryType = Floating
-				values = 84292.6849365234,44885854.7286987,0,0,0,0,20.18724,9.708738,465205.396804997,381063.099944771,45266917.8286435,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Keranda Kerman|Urtris Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Keranda Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Keranda Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Urtris Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Urtris Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 990e1998-a32f-4025-a8d6-b59a382211ad
-				type = TourismContract
-				prestige = 0
-				seed = 1202724693
-				state = Completed
-				agent = STEADLER Engineering Corps
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,46008000,0,0,0,0,21.16191,11,492849.506733159,384885.386733192,46392885.3867332,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Ergard Kerman|Macvin Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Ergard Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Ergard Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Macvin Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Macvin Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 25405a3b-ea94-476e-80cd-3bb3f3c0275c
-				type = TourismContract
-				prestige = 0
-				seed = 1060125096
-				state = Completed
-				agent = WinterOwl Aircraft Emporium
-				deadlineType = Floating
-				expiryType = Floating
-				values = 42146.3424682617,44885854.7286987,0,0,0,0,20.18724,9.708738,423059.054336735,381063.099944771,45266917.8286435,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Mora Kerman|Rodberry Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Mora Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Mora Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Rodberry Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Rodberry Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 3aa539c8-300e-4759-8ee3-74c36bcd7f84
-				type = TourismContract
-				prestige = 0
-				seed = 877222494
+				seed = 609631020
 				state = Completed
 				agent = Sean's Cannery
 				deadlineType = Floating
 				expiryType = Floating
-				values = 104854.373931885,44667963.2949829,0,0,0,0,19.04762,10,498981.879424955,394398.241855557,45062361.5368385,0
+				values = 104854.373931885,44667963.2949829,0,0,0,0,19.04762,10,486512.758242234,384885.386733192,45052848.6817161,0
 				gender = 0
 				preposition = right here on Kerbin
 				homeDestinations = False
-				tourists = Sanlina Kerman|Rodbles Kerman
+				tourists = Lofurt Kerman|Munory Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Sanlina Kerman
+					kerbalName = Lofurt Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -3412,17 +3199,7 @@ GAME
 						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Sanlina Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Sanlina Kerman
+						kerbalName = Lofurt Kerman
 					}
 				}
 				PARAM
@@ -3431,7 +3208,7 @@ GAME
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Rodbles Kerman
+					kerbalName = Munory Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -3440,42 +3217,42 @@ GAME
 						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Rodbles Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Rodbles Kerman
+						kerbalName = Munory Kerman
 					}
 				}
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 0a22f79e-c1f6-4d72-9dd0-c72d05aa4a10
+				guid = 45dadf8e-9b93-4b84-8222-13eee3c7bc50
 				type = TourismContract
 				prestige = 0
-				seed = -1940214594
+				seed = 786464828
 				state = Completed
-				agent = FLOOYD Dynamics Research Labs
+				agent = StrutCo
 				deadlineType = Floating
 				expiryType = Floating
-				values = 64800,46008000,0,0,0,0,19.04762,10,4476461.19177349,4430303.14792574,50438303.1479257,0
+				values = 21600,46008000,0,0,0,0,19.04762,10,708750.678027854,687706.735610947,46695706.7356109,0
 				gender = 0
 				preposition = right here on Kerbin
 				homeDestinations = False
-				tourists = Shannon Kerman|Miltrid Kerman
+				tourists = Samming Kerman|Carcie Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Shannon Kerman
+					kerbalName = Samming Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Samming Kerman
+					}
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -3484,7 +3261,7 @@ GAME
 						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Orbit
-						kerbalName = Shannon Kerman
+						kerbalName = Samming Kerman
 					}
 				}
 				PARAM
@@ -3493,51 +3270,7 @@ GAME
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Miltrid Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Miltrid Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 6280752c-41f8-4def-a707-d7818b590654
-				type = TourismContract
-				prestige = 0
-				seed = -306847504
-				state = Completed
-				agent = Kerbodyne
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,46008000,0,0,0,0,20,10,744795.102058824,681370.707931172,46689370.7079312,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Kerlie Kerman|Obwell Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Kerlie Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Kerlie Kerman
-					}
+					kerbalName = Carcie Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -3546,77 +3279,7 @@ GAME
 						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Kerlie Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Obwell Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Obwell Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = b0d9e4e3-c25a-4435-af40-e64ca0a07a78
-				type = TourismContract
-				prestige = 0
-				seed = -1518566597
-				state = Completed
-				agent = Kerlington Model Rockets and Paper Products Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,46008000,0,0,0,0,20,10,45578.5618139635,16642.0386213893,46024642.0386214,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Tombles Kerman|Vernie Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Tombles Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Tombles Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Vernie Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Vernie Kerman
+						kerbalName = Carcie Kerman
 					}
 				}
 			}
@@ -3704,120 +3367,6 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 45dadf8e-9b93-4b84-8222-13eee3c7bc50
-				type = TourismContract
-				prestige = 0
-				seed = 786464828
-				state = Completed
-				agent = StrutCo
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,46008000,0,0,0,0,19.04762,10,708750.678027854,687706.735610947,46695706.7356109,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Samming Kerman|Carcie Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Samming Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Samming Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Samming Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Carcie Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Carcie Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 74f429dc-c34e-4df2-b601-1bfa582e8a4d
-				type = TourismContract
-				prestige = 0
-				seed = 609631020
-				state = Completed
-				agent = Sean's Cannery
-				deadlineType = Floating
-				expiryType = Floating
-				values = 104854.373931885,44667963.2949829,0,0,0,0,19.04762,10,486512.758242234,384885.386733192,45052848.6817161,0
-				gender = 0
-				preposition = right here on Kerbin
-				homeDestinations = False
-				tourists = Lofurt Kerman|Munory Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Lofurt Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Lofurt Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					kerbalName = Munory Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Munory Kerman
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
 				guid = 5a5e17cc-6e90-46df-b679-54a0c0103cd7
 				type = TourismContract
 				prestige = 0
@@ -3890,26 +3439,36 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 28ea8d07-634f-4a56-a154-1c9ec419bdbb
+				guid = 636c79fc-6f46-4463-a565-7fb5bdbab6dc
 				type = TourismContract
 				prestige = 0
-				seed = 820029446
+				seed = -1227579819
 				state = Completed
-				agent = Kerbin World-Firsts Record-Keeping Society
+				agent = Kerbodyne
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,46008000,0,0,0,0,21.8,10,402522.779944651,381063.099944771,46389063.0999448,0
+				values = 129600,46008000,0,0,0,0,20,10,1200073.01396773,1070781.03396801,47078781.033968,0
 				gender = 0
 				preposition = right here on Kerbin
 				homeDestinations = False
-				tourists = Podvey Kerman|Jendrin Kerman
+				tourists = Jeddous Kerman|Sherfry Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Podvey Kerman
+					kerbalName = Jeddous Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Jeddous Kerman
+					}
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -3918,7 +3477,7 @@ GAME
 						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Podvey Kerman
+						kerbalName = Jeddous Kerman
 					}
 				}
 				PARAM
@@ -3927,7 +3486,7 @@ GAME
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Jendrin Kerman
+					kerbalName = Sherfry Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -3935,8 +3494,8 @@ GAME
 						state = Complete
 						values = 0,0,0,0,0
 						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Jendrin Kerman
+						targetType = Orbit
+						kerbalName = Sherfry Kerman
 					}
 				}
 			}
@@ -4004,26 +3563,244 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 636c79fc-6f46-4463-a565-7fb5bdbab6dc
+				guid = 28ea8d07-634f-4a56-a154-1c9ec419bdbb
 				type = TourismContract
 				prestige = 0
-				seed = -1227579819
+				seed = 820029446
 				state = Completed
-				agent = Kerbodyne
+				agent = Kerbin World-Firsts Record-Keeping Society
 				deadlineType = Floating
 				expiryType = Floating
-				values = 129600,46008000,0,0,0,0,20,10,1200073.01396773,1070781.03396801,47078781.033968,0
+				values = 21600,46008000,0,0,0,0,21.8,10,402522.779944651,381063.099944771,46389063.0999448,0
 				gender = 0
 				preposition = right here on Kerbin
 				homeDestinations = False
-				tourists = Jeddous Kerman|Sherfry Kerman
+				tourists = Podvey Kerman|Jendrin Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Jeddous Kerman
+					kerbalName = Podvey Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Podvey Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Jendrin Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Jendrin Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = b0d9e4e3-c25a-4435-af40-e64ca0a07a78
+				type = TourismContract
+				prestige = 0
+				seed = -1518566597
+				state = Completed
+				agent = Kerlington Model Rockets and Paper Products Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,46008000,0,0,0,0,20,10,45578.5618139635,16642.0386213893,46024642.0386214,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Tombles Kerman|Vernie Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Tombles Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Tombles Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Vernie Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Vernie Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 990e1998-a32f-4025-a8d6-b59a382211ad
+				type = TourismContract
+				prestige = 0
+				seed = 1202724693
+				state = Completed
+				agent = STEADLER Engineering Corps
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,46008000,0,0,0,0,21.16191,11,492849.506733159,384885.386733192,46392885.3867332,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Ergard Kerman|Macvin Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Ergard Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Ergard Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Macvin Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Macvin Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = e75e13af-2dba-487e-8182-7f391f44c50b
+				type = TourismContract
+				prestige = 0
+				seed = 1060125075
+				state = Completed
+				agent = WinterOwl Aircraft Emporium
+				deadlineType = Floating
+				expiryType = Floating
+				values = 84292.6849365234,44885854.7286987,0,0,0,0,20.18724,9.708738,465205.396804997,381063.099944771,45266917.8286435,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Keranda Kerman|Urtris Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Keranda Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Keranda Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Urtris Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Urtris Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 832846bf-d0a8-409d-abfe-31c807444364
+				type = TourismContract
+				prestige = 0
+				seed = -1507227582
+				state = Completed
+				agent = STEADLER Engineering Corps
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,46008000,0,0,0,0,21.16191,11,1127520.08499346,1066373.79397203,47074373.793972,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Bilmund Kerman|Mitgan Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Bilmund Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Bilmund Kerman
+					}
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -4032,7 +3809,25 @@ GAME
 						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Orbit
-						kerbalName = Jeddous Kerman
+						kerbalName = Bilmund Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Mitgan Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Mitgan Kerman
 					}
 					PARAM
 					{
@@ -4042,7 +3837,41 @@ GAME
 						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Jeddous Kerman
+						kerbalName = Mitgan Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 25405a3b-ea94-476e-80cd-3bb3f3c0275c
+				type = TourismContract
+				prestige = 0
+				seed = 1060125096
+				state = Completed
+				agent = WinterOwl Aircraft Emporium
+				deadlineType = Floating
+				expiryType = Floating
+				values = 42146.3424682617,44885854.7286987,0,0,0,0,20.18724,9.708738,423059.054336735,381063.099944771,45266917.8286435,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Mora Kerman|Rodberry Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Mora Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Mora Kerman
 					}
 				}
 				PARAM
@@ -4051,7 +3880,41 @@ GAME
 					enabled = False
 					state = Complete
 					values = 0,0,0,0,0
-					kerbalName = Sherfry Kerman
+					kerbalName = Rodberry Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Rodberry Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 6280752c-41f8-4def-a707-d7818b590654
+				type = TourismContract
+				prestige = 0
+				seed = -306847504
+				state = Completed
+				agent = Kerbodyne
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,46008000,0,0,0,0,20,10,744795.102058824,681370.707931172,46689370.7079312,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Kerlie Kerman|Obwell Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Kerlie Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -4060,7 +3923,211 @@ GAME
 						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Orbit
-						kerbalName = Sherfry Kerman
+						kerbalName = Kerlie Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Kerlie Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Obwell Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Obwell Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 0a22f79e-c1f6-4d72-9dd0-c72d05aa4a10
+				type = TourismContract
+				prestige = 0
+				seed = -1940214594
+				state = Completed
+				agent = FLOOYD Dynamics Research Labs
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,46008000,0,0,0,0,19.04762,10,4476461.19177349,4430303.14792574,50438303.1479257,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Shannon Kerman|Miltrid Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Shannon Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Shannon Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Miltrid Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Miltrid Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 3aa539c8-300e-4759-8ee3-74c36bcd7f84
+				type = TourismContract
+				prestige = 0
+				seed = 877222494
+				state = Completed
+				agent = Sean's Cannery
+				deadlineType = Floating
+				expiryType = Floating
+				values = 104854.373931885,44667963.2949829,0,0,0,0,19.04762,10,498981.879424955,394398.241855557,45062361.5368385,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = False
+				tourists = Sanlina Kerman|Rodbles Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Sanlina Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Sanlina Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Sanlina Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Rodbles Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Rodbles Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Rodbles Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = c7574db7-ffb0-4273-80ab-30dc6783022b
+				type = TourismContract
+				prestige = 0
+				seed = -32582314
+				state = Completed
+				agent = FLOOYD Dynamics Research Labs
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,46008000,0,0,0,0,19.04762,10,10401436.0993139,10301145.1549665,56309145.1549665,0
+				gender = 0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				tourists = Dedie Kerman|Debchell Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Dedie Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Dedie Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					kerbalName = Debchell Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Debchell Kerman
 					}
 				}
 			}
@@ -4291,27 +4358,6 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 6b777fef-64a1-43e7-913c-4216e23b84b6
-				type = PlantFlag
-				prestige = 0
-				seed = 692354063
-				state = Completed
-				agent = C7 Aerospace Division
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,92016000,46000,116000,46000,0,14,7,4694557.17430871,4629828.8743071,96645828.8743071,0
-				body = 2
-				PARAM
-				{
-					name = PlantFlag
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					body = 2
-				}
-			}
-			CONTRACT_FINISHED
-			{
 				guid = 0069b513-b766-4dd7-9c11-5fa4a3ec0e8c
 				type = PlantFlag
 				prestige = 0
@@ -4333,67 +4379,23 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 659238d9-f90b-480d-a0bf-485fcb130541
-				type = SatelliteContract
+				guid = 6b777fef-64a1-43e7-913c-4216e23b84b6
+				type = PlantFlag
 				prestige = 0
-				seed = 1740873431
+				seed = 692354063
 				state = Completed
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
+				agent = C7 Aerospace Division
 				deadlineType = Floating
 				expiryType = Floating
-				values = 122264.141178131,43403770.1182365,31111.1105918884,83708.3281348481,35279.9983978271,4,13.8958,6.862745,5096992.01512699,5020863.26000328,48424633.3782398,0
-				targetBody = 1
-				deviation = 7
-				orbitType = 2
-				placementMode = 0
+				values = 64800,92016000,46000,116000,46000,0,14,7,4694557.17430871,4629828.8743071,96645828.8743071,0
+				body = 2
 				PARAM
 				{
-					name = VesselSystemsParameter
+					name = PlantFlag
+					enabled = False
 					state = Complete
-					disableOnStateChange = False
 					values = 0,0,0,0,0
-					typeString = probe
-					mannedStatus = 1
-					requireNew = True
-					checkModuleTypes = Antenna|Power
-					checkModuleDescriptions = has an antenna|can generate power
-					launchID = 149
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					TargetBody = 1
-					deviationWindow = 7
-					orbitType = 2
-					inclination = 90
-					eccentricity = 0.0490102581013855
-					sma = 11650944.1808842
-					lan = 48.3605764100145
-					argumentOfPeriapsis = 119.725753352313
-					meanAnomalyAtEpoch = 2.34160359854903
-					epoch = 0
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					article = a
-					partDescription = materials bay
-					vesselDescription = satellite
-					partNames = science_module
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					holdSeconds = 10
+					body = 2
 				}
 			}
 			CONTRACT_FINISHED
@@ -4463,6 +4465,71 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
+				guid = 659238d9-f90b-480d-a0bf-485fcb130541
+				type = SatelliteContract
+				prestige = 0
+				seed = 1740873431
+				state = Completed
+				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 122264.141178131,43403770.1182365,31111.1105918884,83708.3281348481,35279.9983978271,4,13.8958,6.862745,5096992.01512699,5020863.26000328,48424633.3782398,0
+				targetBody = 1
+				deviation = 7
+				orbitType = 2
+				placementMode = 0
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					typeString = probe
+					mannedStatus = 1
+					requireNew = True
+					checkModuleTypes = Antenna|Power
+					checkModuleDescriptions = has an antenna|can generate power
+					launchID = 149
+				}
+				PARAM
+				{
+					name = SpecificOrbitParameter
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					TargetBody = 1
+					deviationWindow = 7
+					orbitType = 2
+					inclination = 90
+					eccentricity = 0.0490102581013855
+					sma = 11650944.1808842
+					lan = 48.3605764100145
+					argumentOfPeriapsis = 119.725753352313
+					meanAnomalyAtEpoch = 2.34160359854903
+					epoch = 0
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					article = a
+					partDescription = materials bay
+					vesselDescription = satellite
+					partNames = science_module
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT_FINISHED
+			{
 				guid = 0f06c0ba-f055-4df1-a1bf-c204c1319a94
 				type = WorldFirstContract
 				prestige = 1
@@ -4482,6 +4549,75 @@ GAME
 					values = 0,0,0,0,0
 					targetBody = 1
 					targetType = RENDEZVOUS
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 48595d37-2c00-472b-b585-5bd2e53a1e74
+				type = CollectScience
+				prestige = 0
+				seed = 786464796
+				state = Completed
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 86400,46008000,7650,18700,7650,3,5,3,773550.678027854,687687.55561093,46695687.5556109,0
+				body = 1
+				location = Space
+				PARAM
+				{
+					name = CollectScience
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					body = 1
+					location = Space
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 35270a2e-7d1c-4670-9807-4f721e4c7b79
+				type = CollectScience
+				prestige = 0
+				seed = -823263108
+				state = Completed
+				agent = C7 Aerospace Division
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,46008000,7650,18700,7650,3,5,3,1278156.50539564,1213400.04539567,47221400.0453957,0
+				body = 1
+				location = Space
+				PARAM
+				{
+					name = CollectScience
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					body = 1
+					location = Space
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = dd846222-31c5-48e0-9faa-2e14ca7ff854
+				type = CollectScience
+				prestige = 0
+				seed = 1786518622
+				state = Completed
+				agent = Goliath National Products
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,46008000,7650,18700,7650,3,5,3,458877.805493024,395805.820303495,46403805.8203035,0
+				body = 1
+				location = Space
+				PARAM
+				{
+					name = CollectScience
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					body = 1
+					location = Space
 				}
 			}
 			CONTRACT_FINISHED
@@ -4555,107 +4691,15 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = dd846222-31c5-48e0-9faa-2e14ca7ff854
+				guid = 641c14e7-9a13-434b-8e4a-ccb038afa535
 				type = CollectScience
 				prestige = 0
-				seed = 1786518622
+				seed = 1773060310
 				state = Completed
-				agent = Goliath National Products
+				agent = Kerlington Model Rockets and Paper Products Inc
 				deadlineType = Floating
 				expiryType = Floating
-				values = 64800,46008000,7650,18700,7650,3,5,3,458877.805493024,395805.820303495,46403805.8203035,0
-				body = 1
-				location = Space
-				PARAM
-				{
-					name = CollectScience
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					body = 1
-					location = Space
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 48595d37-2c00-472b-b585-5bd2e53a1e74
-				type = CollectScience
-				prestige = 0
-				seed = 786464796
-				state = Completed
-				agent = Research & Development Department
-				deadlineType = Floating
-				expiryType = Floating
-				values = 86400,46008000,7650,18700,7650,3,5,3,773550.678027854,687687.55561093,46695687.5556109,0
-				body = 1
-				location = Space
-				PARAM
-				{
-					name = CollectScience
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					body = 1
-					location = Space
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 35270a2e-7d1c-4670-9807-4f721e4c7b79
-				type = CollectScience
-				prestige = 0
-				seed = -823263108
-				state = Completed
-				agent = C7 Aerospace Division
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,46008000,7650,18700,7650,3,5,3,1278156.50539564,1213400.04539567,47221400.0453957,0
-				body = 1
-				location = Space
-				PARAM
-				{
-					name = CollectScience
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					body = 1
-					location = Space
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 1192e160-2834-485b-97a3-9b8d0a6c1bba
-				type = CollectScience
-				prestige = 1
-				seed = -1186987324
-				state = Completed
-				agent = Sean's Cannery
-				deadlineType = Floating
-				expiryType = Floating
-				values = 101886.784315109,86807540.2364731,20272.5011855364,54510.5043692589,21037.5004559755,3,5.454545,3,720329.882484527,619357.267690866,87426897.504164,0
-				body = 2
-				location = Space
-				PARAM
-				{
-					name = CollectScience
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					body = 2
-					location = Space
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = c0f6322c-90d9-47fa-b1ee-fa49e7415cb2
-				type = CollectScience
-				prestige = 0
-				seed = 1508267711
-				state = Completed
-				agent = Kerbal Motion LLC
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,92016000,15300,37400,15300,3,5,3,6665712.2558733,6622546.13587255,98638546.1358725,0
+				values = 21600,92016000,15300,37400,15300,3,5,3,4955170.19985271,4933716.59984944,96949716.5998494,0
 				body = 2
 				location = Space
 				PARAM
@@ -4693,15 +4737,38 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 641c14e7-9a13-434b-8e4a-ccb038afa535
+				guid = 1192e160-2834-485b-97a3-9b8d0a6c1bba
 				type = CollectScience
-				prestige = 0
-				seed = 1773060310
+				prestige = 1
+				seed = -1186987324
 				state = Completed
-				agent = Kerlington Model Rockets and Paper Products Inc
+				agent = Sean's Cannery
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,92016000,15300,37400,15300,3,5,3,4955170.19985271,4933716.59984944,96949716.5998494,0
+				values = 101886.784315109,86807540.2364731,20272.5011855364,54510.5043692589,21037.5004559755,3,5.454545,3,720329.882484527,619357.267690866,87426897.504164,0
+				body = 2
+				location = Space
+				PARAM
+				{
+					name = CollectScience
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					body = 2
+					location = Space
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = c0f6322c-90d9-47fa-b1ee-fa49e7415cb2
+				type = CollectScience
+				prestige = 0
+				seed = 1508267711
+				state = Completed
+				agent = Kerbal Motion LLC
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,92016000,15300,37400,15300,3,5,3,6665712.2558733,6622546.13587255,98638546.1358725,0
 				body = 2
 				location = Space
 				PARAM
@@ -4766,56 +4833,6 @@ GAME
 			}
 			CONTRACT_FINISHED
 			{
-				guid = 177c5287-5bc0-45e1-b2c1-bf3a198061b3
-				type = PartTest
-				prestige = 0
-				seed = 1939028873
-				state = Completed
-				agent = Research & Development Department
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,9201600,1800,4500,1800,1,1,1,5041865.19463972,5020863.26000328,14222463.2600033,0
-				part = solidBooster
-				haul = False
-				dest = 1
-				sit = PRELAUNCH
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					part = solidBooster
-					body = Kerbin
-					situation = PRELAUNCH
-					uniqueID = 0.91319290544520737
-					haul = False
-					repeatability = ALWAYS
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					tested = 3926261034
-					PARAM
-					{
-						name = ReachDestination
-						state = Complete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Complete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = PRELAUNCH
-						title = 
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
 				guid = bf4950b2-4499-488b-8970-6b9bae5cf194
 				type = PartTest
 				prestige = 0
@@ -4844,6 +4861,56 @@ GAME
 					repeatability = ALWAYS
 					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
 					tested = 2287502081
+					PARAM
+					{
+						name = ReachDestination
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 177c5287-5bc0-45e1-b2c1-bf3a198061b3
+				type = PartTest
+				prestige = 0
+				seed = 1939028873
+				state = Completed
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,1800,4500,1800,1,1,1,5041865.19463972,5020863.26000328,14222463.2600033,0
+				part = solidBooster
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					part = solidBooster
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.91319290544520737
+					haul = False
+					repeatability = ALWAYS
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					tested = 3926261034
 					PARAM
 					{
 						name = ReachDestination
@@ -9398,13 +9465,51 @@ GAME
 					winOn = All
 				}
 			}
+			CONTRACT_FINISHED
+			{
+				guid = abc65327-6b17-4ae2-a027-12e5ead894aa
+				type = RecoverAsset
+				prestige = 0
+				seed = -2140854949
+				state = Completed
+				agent = Ionic Symphonic Protonic Electronics
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,46008000,23400,53460,23400,0,9,9,10343715.5046688,10301145.1549665,56309145.1549665,10306111.5160833
+				targetBody = 1
+				kerbalName = Paca Kerman
+				partName = Large.Crewed.Lab
+				partID = 1205719049
+				recoveryLocation = 1
+				recoveryType = 1
+				gender = 2
+				PARAM
+				{
+					name = AcquireCrew
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					title = Save Paca Kerman
+					winOn = 0
+				}
+				PARAM
+				{
+					name = RecoverKerbal
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					title = Recover Paca Kerman on Kerbin
+					failOn = All
+					winOn = All
+				}
+			}
 		}
 	}
 	SCENARIO
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 4992701.59426788
+		funds = 5189138.20939473
 	}
 	SCENARIO
 	{
@@ -9829,7 +9934,7 @@ GAME
 				}
 				ReturnFromSurface
 				{
-					completedManned = 10101344.5905258
+					completed = 10101344.5905258
 					vessel
 					{
 						name = Minmus landing
@@ -9847,7 +9952,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 485.9273
+		sci = 486.7242
 		Tech
 		{
 			id = start
@@ -10812,9 +10917,9 @@ GAME
 			id = surfaceSample@KerbinSrfLandedGrasslands
 			title = Surface Sample from Kerbin's Grasslands
 			dsc = 1
-			scv = 0.0009761651
+			scv = 0.0002437433
 			sbv = 0.3
-			sci = 11.98829
+			sci = 11.99708
 			cap = 12
 		}
 		Science
@@ -11337,7 +11442,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 826.8176
+		rep = 828.963
 	}
 	SCENARIO
 	{
@@ -11683,8 +11788,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.5
-		UT = 10305505.0393427
-		activeVessel = 21
+		UT = 10306168.376082
+		activeVessel = 0
 		mapViewFiltering = 2047
 		VESSEL
 		{
@@ -11718,10 +11823,10 @@ GAME
 				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 46.1102436115455
-				LAN = 279.942221658892
+				LPE = 45.4314190959772
+				LAN = 295.259381149348
 				MNA = -8.40714670366795
-				EPH = 10305206.238354
+				EPH = 10306163.7560821
 				REF = 1
 			}
 			PART
@@ -11906,13 +12011,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 80.9333105822285
-				LAN = 279.942221658892
+				LPE = 80.9199820413251
+				LAN = 295.259381149348
 				MNA = -8.40714670366795
-				EPH = 10305206.238354
+				EPH = 10306163.7560821
 				REF = 1
 			}
 			PART
@@ -12097,13 +12202,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = 300066.394678618
 				ECC = 1
 				INC = NaN
-				LPE = 139.669301947911
-				LAN = 279.942221658892
-				MNA = -8.40714670366795
-				EPH = 10305206.238354
+				LPE = 140.146673613
+				LAN = 295.259381149348
+				MNA = 3.14159265358979
+				EPH = 10306163.7560821
 				REF = 1
 			}
 			PART
@@ -12288,13 +12393,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 300127.461510619
 				ECC = 1
 				INC = NaN
-				LPE = 47.8694080823274
-				LAN = 279.942221658892
-				MNA = -8.40714670366795
-				EPH = 10305206.238354
+				LPE = 48.3833142655
+				LAN = 295.259381149348
+				MNA = 3.14159265358979
+				EPH = 10306163.7560821
 				REF = 1
 			}
 			PART
@@ -12479,13 +12584,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 102244.48967074
 				ECC = 1
 				INC = NaN
-				LPE = 37.8101944008567
-				LAN = 279.942221658892
-				MNA = -8.40714670366795
-				EPH = 10305206.238354
+				LPE = 25.4894478935076
+				LAN = 295.259381149348
+				MNA = 0.570796326794897
+				EPH = 10306163.7560821
 				REF = 2
 			}
 			PART
@@ -12700,13 +12805,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300428.973841296
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 89.7097077307657
-				LAN = 279.942221658892
-				MNA = 0.288150375758712
-				EPH = 10305206.238354
+				LPE = 90.3884759982136
+				LAN = 295.259381149348
+				MNA = -8.40714670366795
+				EPH = 10306163.7560821
 				REF = 1
 			}
 			PART
@@ -12921,13 +13026,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 101.772920100898
-				LAN = 279.942221658892
+				LPE = 88.9962515176732
+				LAN = 295.259381149348
 				MNA = -8.40714670366795
-				EPH = 10305206.238354
+				EPH = 10306163.7560821
 				REF = 2
 			}
 			PART
@@ -17307,13 +17412,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 300806.974098136
 				ECC = 1
 				INC = NaN
-				LPE = 122.399048752885
-				LAN = 279.942221658892
-				MNA = -8.40714670366795
-				EPH = 10305206.238354
+				LPE = 123.07797217083
+				LAN = 295.259381149348
+				MNA = 3.14159265358979
+				EPH = 10306163.7560821
 				REF = 1
 			}
 			PART
@@ -17528,13 +17633,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 81.5520198526798
-				LAN = 279.942221658892
+				LPE = 71.2995638692287
+				LAN = 295.259381149348
 				MNA = -8.40714670366795
-				EPH = 10305206.238354
+				EPH = 10306163.7560821
 				REF = 2
 			}
 			PART
@@ -17749,13 +17854,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 101026.489140494
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 34.9310783249414
-				LAN = 279.942221658892
-				MNA = 3.14159265358979
-				EPH = 10305206.238354
+				LPE = 47.4665631341865
+				LAN = 295.259381149348
+				MNA = -8.40714670366795
+				EPH = 10306163.7560821
 				REF = 2
 			}
 			PART
@@ -32072,4945 +32177,6 @@ GAME
 			{
 			}
 		}
-		VESSEL
-		{
-			pid = 3b34d80a5ab4421586090d4105c6c1ea
-			name = Paca's Scrap
-			type = Ship
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 4359.86437620595
-			lct = 10301145.1549665
-			lastUT = 10305505.0393427
-			root = 0
-			lat = 0.000659977793062133
-			lon = 253.125204287383
-			alt = 79289.4109036338
-			hgt = -1
-			nrm = 0.01092989,-0.346009,-0.9381677
-			rot = -0.03876683,0.002226512,0.6630198,-0.7475942
-			CoM = -7.034553E-07,-7.127107E-06,-2.630051E-06
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			cPch = 0
-			cHdg = 0
-			cMod = 0
-			ORBIT
-			{
-				SMA = 680741.585562075
-				ECC = 0.00451006311367337
-				INC = 0.00086120753302349
-				LPE = 348.027164443925
-				LAN = 14.6197587991912
-				MNA = 1.07420524324907
-				EPH = 10305505.0393427
-				REF = 1
-			}
-			PART
-			{
-				name = Large.Crewed.Lab
-				cid = 0
-				uid = 1205719049
-				mid = 1205719049
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = , -1
-				attN = top, -1
-				attN = bottom, -1
-				mass = 3.5
-				temp = 184.074561512732
-				tempExt = 184.442623536319
-				tempExtUnexp = 181.882240594287
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = Large.Crewed.Lab (Paca's Scrap)
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleScienceContainer
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						StoreDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Store Experiments (0)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						CollectDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Take Data (0)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Review Data
-							guiName = Review Data (0)
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceLab
-					isEnabled = True
-					dataStored = 0
-					storedScience = 0
-					stagingEnabled = True
-					EVENTS
-					{
-						TransmitScience
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Transmit Science
-							guiName = Transmit Science
-							category = Transmit Science
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						CleanModulesEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Clean Experiments
-							guiName = Clean Experiments [0]
-							category = Clean Experiments
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					EXPERIMENT_DATA
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceConverter
-					isEnabled = True
-					DirtyFlag = False
-					EfficiencyBonus = 1
-					IsActivated = False
-					stagingEnabled = True
-					lastUpdateTime = 10305505.0393427
-					EVENTS
-					{
-						StartResourceConverter
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Start Converter
-							guiName = Start Research
-							category = Start Converter
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						StopResourceConverter
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Stop Converter
-							guiName = Stop Research
-							category = Stop Converter
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						StopResourceConverterAction
-						{
-							actionGroup = None
-						}
-						StartResourceConverterAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = FlagDecal
-					isEnabled = True
-					flagDisplayed = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleFlag
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle Flag
-							guiName = Toggle Flag
-							category = Toggle Flag
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTripLogger
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					Log
-					{
-						flight = 0
-						0 = Orbit,Kerbin
-					}
-				}
-				MODULE
-				{
-					name = TransferDialogSpawner
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						SpawnDialog
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = True
-							guiIcon = Transfer Crew
-							guiName = Transfer Crew
-							category = Transfer Crew
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = False, 0
-				Gear = True, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 0
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 10301145.1549665
-				lifetime = 92016000
-				refTime = 92016000
-				size = 0
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-		}
-		VESSEL
-		{
-			pid = 9b661815bf2c4b7ea94302e0602d7aac
-			name = Orbital resque 2 peeps
-			type = Ship
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 4349.34437630512
-			lct = 10301155.6749664
-			lastUT = 10305505.0393427
-			root = 0
-			lat = 0.000268068573554459
-			lon = 253.123060690744
-			alt = 79287.0196988269
-			hgt = -1
-			nrm = -0.7597901,-0.1001607,-0.6424072
-			rot = 0.4238881,-0.161908,0.5811537,0.675548
-			CoM = -0.0003010912,-3.772937,-0.0006284864
-			stg = 2
-			prst = False
-			ref = 2491440834
-			ctrl = True
-			cPch = 0.2380001
-			cHdg = 3.017999
-			cMod = 0
-			ORBIT
-			{
-				SMA = 680459.686415051
-				ECC = 0.00411272960952125
-				INC = 0.0022069784531434
-				LPE = 107.283115332718
-				LAN = 251.911682525129
-				MNA = 1.13490369294664
-				EPH = 10305505.0393427
-				REF = 1
-			}
-			PART
-			{
-				name = mk1pod
-				cid = 4294532622
-				uid = 757272549
-				mid = 3171521279
-				launchID = 174
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = bottom, 6
-				attN = top, 3
-				mass = 0.8
-				temp = 309.102463290776
-				tempExt = 308.619331213215
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = mk1pod (Orbital resque 2 peeps)
-				modCost = 0
-				crew = Paca Kerman
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleCommand
-					isEnabled = True
-					controlSrcStatusText = Operational
-					stagingEnabled = True
-					EVENTS
-					{
-						MakeReference
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Control From Here
-							guiName = Control From Here
-							category = Control From Here
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						RenameVessel
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = True
-							guiIcon = Rename Vessel
-							guiName = Rename Vessel
-							category = Rename Vessel
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					stateString = Running
-					stagingEnabled = True
-					WheelState = Active
-					EVENTS
-					{
-						OnToggle
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle Torque
-							guiName = Toggle Torque
-							category = Toggle Torque
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = False
-					Inoperable = False
-					stagingEnabled = True
-					EVENTS
-					{
-						DeployExperiment
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Deploy
-							guiName = Crew Report
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						CollectDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Take Data
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Review Data
-							guiName = Review Report
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperiment
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DeployExperimentExternal
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Deploy
-							guiName = Crew Report
-							category = Deploy
-							guiActiveUnfocused = True
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						CleanUpExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Restore
-							guiName = Restore
-							category = Restore
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-						}
-						ResetAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceContainer
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						StoreDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Store Experiments (0)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.3
-							externalToEVAOnly = True
-						}
-						CollectDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Take Data (0)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.3
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Review Data
-							guiName = Review Stored Data (0)
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FlagDecal
-					isEnabled = True
-					flagDisplayed = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleFlag
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle Flag
-							guiName = Toggle Flag
-							category = Toggle Flag
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleConductionMultiplier
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTripLogger
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					Log
-					{
-						flight = 0
-						0 = Flight,Kerbin
-						0 = Suborbit,Kerbin
-						0 = Orbit,Kerbin
-					}
-				}
-				MODULE
-				{
-					name = TransferDialogSpawner
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						SpawnDialog
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = True
-							guiIcon = Transfer Crew
-							guiName = Transfer Crew
-							category = Transfer Crew
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 21.4623664408394
-					maxAmount = 50
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = MonoPropellant
-					amount = 10
-					maxAmount = 10
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = parachuteRadial
-				cid = 4294527924
-				uid = 63970613
-				mid = 3171521279
-				launchID = 174
-				parent = 0
-				position = -0.466891586780548,0.102039337158203,2.98023223876953E-08
-				rotation = 0.1287088,0.6952944,-0.1287089,0.695294
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 1
-				sym = 2
-				srfN = srfAttach, 0
-				mass = 0.1
-				temp = 308.998530078216
-				tempExt = 308.359565900522
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = parachuteRadial
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleParachute
-					isEnabled = True
-					persistentState = STOWED
-					minAirPressureToOpen = 0.04
-					deployAltitude = 1000
-					stagingEnabled = True
-					minAirPressureToOpen_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0.01
-						maxValue = 0.75
-						stepIncrement = 0.01
-					}
-					deployAltitude_UIFlight
-					{
-						controlEnabled = True
-						minValue = 50
-						maxValue = 5000
-						stepIncrement = 50
-					}
-					EVENTS
-					{
-						Deploy
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Deploy Chute
-							guiName = Deploy Chute
-							category = Deploy Chute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						CutParachute
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Cut Parachute
-							guiName = Cut Parachute
-							category = Cut Parachute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Repack
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Repack Chute
-							guiName = Repack Chute
-							category = Repack Chute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Disarm
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Disarm
-							guiName = Disarm
-							category = Disarm
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-						}
-						CutAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleDragModifier
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleDragModifier
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = parachuteRadial
-				cid = 4294527290
-				uid = 1129741943
-				mid = 3171521279
-				launchID = 174
-				parent = 0
-				position = 0.466891586780548,0.102039337158203,-7.45058059692383E-08
-				rotation = -0.1287089,0.6952939,-0.1287088,-0.6952945
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 1
-				attm = 1
-				sym = 1
-				srfN = srfAttach, 0
-				mass = 0.1
-				temp = 308.998736165265
-				tempExt = 308.359677119528
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = parachuteRadial
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleParachute
-					isEnabled = True
-					persistentState = STOWED
-					minAirPressureToOpen = 0.04
-					deployAltitude = 1000
-					stagingEnabled = True
-					minAirPressureToOpen_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0.01
-						maxValue = 0.75
-						stepIncrement = 0.01
-					}
-					deployAltitude_UIFlight
-					{
-						controlEnabled = True
-						minValue = 50
-						maxValue = 5000
-						stepIncrement = 50
-					}
-					EVENTS
-					{
-						Deploy
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Deploy Chute
-							guiName = Deploy Chute
-							category = Deploy Chute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						CutParachute
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Cut Parachute
-							guiName = Cut Parachute
-							category = Cut Parachute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Repack
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Repack Chute
-							guiName = Repack Chute
-							category = Repack Chute
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Disarm
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Disarm
-							guiName = Disarm
-							category = Disarm
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-						}
-						CutAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleDragModifier
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleDragModifier
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = mk1pod
-				cid = 4288030118
-				uid = 2491440834
-				mid = 3171521279
-				launchID = 174
-				parent = 0
-				position = 0,1.04741859436035,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = bottom, 0
-				attN = top, 4
-				mass = 0.8
-				temp = 308.947745761637
-				tempExt = 308.396733235256
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = mk1pod
-				modCost = 0
-				crew = Debchell Kerman
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleCommand
-					isEnabled = True
-					controlSrcStatusText = Tourists Need Crew (0/1)
-					stagingEnabled = True
-					EVENTS
-					{
-						MakeReference
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Control From Here
-							guiName = Control From Here
-							category = Control From Here
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						RenameVessel
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = True
-							guiIcon = Rename Vessel
-							guiName = Rename Vessel
-							category = Rename Vessel
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					stateString = Running
-					stagingEnabled = True
-					WheelState = Active
-					EVENTS
-					{
-						OnToggle
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle Torque
-							guiName = Toggle Torque
-							category = Toggle Torque
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = False
-					Inoperable = False
-					stagingEnabled = True
-					EVENTS
-					{
-						DeployExperiment
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Deploy
-							guiName = Crew Report
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						CollectDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Take Data
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Review Data
-							guiName = Review Report
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperiment
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DeployExperimentExternal
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Deploy
-							guiName = Crew Report
-							category = Deploy
-							guiActiveUnfocused = True
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						CleanUpExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Restore
-							guiName = Restore
-							category = Restore
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-						}
-						ResetAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceContainer
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						StoreDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Store Experiments (0)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.3
-							externalToEVAOnly = True
-						}
-						CollectDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Take Data (0)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.3
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Review Data
-							guiName = Review Stored Data (0)
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FlagDecal
-					isEnabled = True
-					flagDisplayed = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleFlag
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle Flag
-							guiName = Toggle Flag
-							category = Toggle Flag
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleConductionMultiplier
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTripLogger
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					Log
-					{
-						flight = 0
-						0 = Flight,Kerbin
-						0 = Suborbit,Kerbin
-						0 = Orbit,Kerbin
-					}
-				}
-				MODULE
-				{
-					name = TransferDialogSpawner
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						SpawnDialog
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = True
-							guiIcon = Transfer Crew
-							guiName = Transfer Crew
-							category = Transfer Crew
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 21.4623664408394
-					maxAmount = 50
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = MonoPropellant
-					amount = 10
-					maxAmount = 10
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = HeatShield1
-				cid = 4294523278
-				uid = 4086040184
-				mid = 3171521279
-				launchID = 174
-				parent = 3
-				position = 0,1.71179008483887,0
-				rotation = 1,0,0,0
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				dstg = 1
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = direct, -1
-				attN = bottom, 5
-				attN = top, 3
-				mass = 0.1
-				temp = 308.310517939988
-				tempExt = 307.552232829195
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = HeatShield1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleJettison
-					isEnabled = True
-					isJettisoned = False
-					shroudHideOverride = False
-					stagingEnabled = True
-					shroudHideOverride_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						JettisonAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleAblator
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = Ablator
-					amount = 200
-					maxAmount = 200
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = noseCone
-				cid = 4294504594
-				uid = 1247809321
-				mid = 3171521279
-				launchID = 174
-				parent = 4
-				position = 0,1.88179016113281,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = bottom01, 4
-				mass = 0.03
-				temp = 307.787023372524
-				tempExt = 307.585618126112
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = noseCone
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-			}
-			PART
-			{
-				name = mk1pod
-				cid = 4294531960
-				uid = 670023257
-				mid = 3171521279
-				launchID = 174
-				parent = 0
-				position = 0,-1.04741096496582,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = bottom, 9
-				attN = top, 0
-				mass = 0.8
-				temp = 309.407823377187
-				tempExt = 308.908087314055
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = mk1pod
-				modCost = 0
-				crew = Dedie Kerman
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleCommand
-					isEnabled = True
-					controlSrcStatusText = Tourists Need Crew (0/1)
-					stagingEnabled = True
-					EVENTS
-					{
-						MakeReference
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Control From Here
-							guiName = Control From Here
-							category = Control From Here
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						RenameVessel
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = True
-							guiIcon = Rename Vessel
-							guiName = Rename Vessel
-							category = Rename Vessel
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					stateString = Running
-					stagingEnabled = True
-					WheelState = Active
-					EVENTS
-					{
-						OnToggle
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle Torque
-							guiName = Toggle Torque
-							category = Toggle Torque
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = False
-					Inoperable = False
-					stagingEnabled = True
-					EVENTS
-					{
-						DeployExperiment
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Deploy
-							guiName = Crew Report
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						CollectDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Take Data
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Review Data
-							guiName = Review Report
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperiment
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DeployExperimentExternal
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Deploy
-							guiName = Crew Report
-							category = Deploy
-							guiActiveUnfocused = True
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						CleanUpExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Restore
-							guiName = Restore
-							category = Restore
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-						}
-						ResetAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceContainer
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						StoreDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Store Experiments (0)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.3
-							externalToEVAOnly = True
-						}
-						CollectDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Take Data (0)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.3
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Review Data
-							guiName = Review Stored Data (0)
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FlagDecal
-					isEnabled = True
-					flagDisplayed = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleFlag
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle Flag
-							guiName = Toggle Flag
-							category = Toggle Flag
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleConductionMultiplier
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTripLogger
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					Log
-					{
-						flight = 0
-						0 = Flight,Kerbin
-						0 = Suborbit,Kerbin
-						0 = Orbit,Kerbin
-					}
-				}
-				MODULE
-				{
-					name = TransferDialogSpawner
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						SpawnDialog
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = True
-							guiIcon = Transfer Crew
-							guiName = Transfer Crew
-							category = Transfer Crew
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 21.4623664408394
-					maxAmount = 50
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = MonoPropellant
-					amount = 10
-					maxAmount = 10
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = solarPanels5
-				cid = 4294526712
-				uid = 1173521774
-				mid = 3171521279
-				launchID = 174
-				parent = 6
-				position = -0.490127086639404,-1.00920104980469,2.98023223876953E-08
-				rotation = -0.1287089,-0.695294,-0.1287088,0.6952944
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 8
-				srfN = srfAttach, 6
-				mass = 0.005
-				temp = 309.359441670669
-				tempExt = 308.88132551341
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = solarPanels5
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, -6.057208E-07, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					efficiencyMult = 1
-					launchUT = 10301155.6749664
-					stagingEnabled = True
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-							active = False
-						}
-						ExtendAction
-						{
-							actionGroup = None
-							active = False
-						}
-						RetractAction
-						{
-							actionGroup = None
-							active = False
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5
-				cid = 4294526636
-				uid = 1042779872
-				mid = 3171521279
-				launchID = 174
-				parent = 6
-				position = 0.490127086639404,-1.00920104980469,-8.19563865661621E-08
-				rotation = -0.1287088,0.6952945,0.1287089,0.6952939
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 7
-				srfN = srfAttach, 6
-				mass = 0.005
-				temp = 309.359502309803
-				tempExt = 308.881370972819
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = solarPanels5
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, -6.057208E-07, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					efficiencyMult = 1
-					launchUT = 10301155.6749664
-					stagingEnabled = True
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-							active = False
-						}
-						ExtendAction
-						{
-							actionGroup = None
-							active = False
-						}
-						RetractAction
-						{
-							actionGroup = None
-							active = False
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = probeCoreOcto
-				cid = 4294614790
-				uid = 2799939961
-				mid = 3171521279
-				launchID = 174
-				parent = 6
-				position = 0,-1.63954162597656,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = bottom, 10
-				attN = top, 6
-				mass = 0.1
-				temp = 309.730935079899
-				tempExt = 309.410643748657
-				tempExtUnexp = 4
-				expt = 0
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = probeCoreOcto
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleCommand
-					isEnabled = True
-					controlSrcStatusText = Operational
-					stagingEnabled = True
-					EVENTS
-					{
-						MakeReference
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Control From Here
-							guiName = Control From Here
-							category = Control From Here
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						RenameVessel
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = True
-							guiIcon = Rename Vessel
-							guiName = Rename Vessel
-							category = Rename Vessel
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					stateString = Running
-					stagingEnabled = True
-					WheelState = Active
-					EVENTS
-					{
-						OnToggle
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Toggle Torque
-							guiName = Toggle Torque
-							category = Toggle Torque
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleSAS
-					isEnabled = True
-					standaloneToggle = True
-					stagingEnabled = True
-					standaloneToggle_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTripLogger
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-					Log
-					{
-						flight = 0
-						0 = Flight,Kerbin
-						0 = Suborbit,Kerbin
-						0 = Orbit,Kerbin
-					}
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 1.25391182370579
-					maxAmount = 10
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = stackDecoupler
-				cid = 4294496680
-				uid = 2052978753
-				mid = 3171521279
-				launchID = 174
-				parent = 9
-				position = 0,-1.89167022705078,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				dstg = 1
-				sqor = 1
-				sepI = 1
-				sidx = 0
-				attm = 0
-				srfN = , -1
-				attN = bottom, 11
-				attN = top, 9
-				mass = 0.05
-				temp = 310.623570156589
-				tempExt = 310.226351152797
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = stackDecoupler
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDecouple
-					isEnabled = True
-					ejectionForcePercent = 100
-					isDecoupled = False
-					stagingEnabled = True
-					ejectionForcePercent_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 1
-					}
-					EVENTS
-					{
-						Decouple
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Decouple
-							guiName = Decouple
-							category = Decouple
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Decoupler: Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleToggleCrossfeed
-					isEnabled = True
-					crossfeedStatus = False
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleEvent
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Disable Crossfeed
-							guiName = Enable Crossfeed
-							category = Disable Crossfeed
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						EnableAction
-						{
-							actionGroup = None
-						}
-						DisableAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = fuelTank.long
-				cid = 4294493522
-				uid = 2772516253
-				mid = 3171521279
-				launchID = 174
-				parent = 10
-				position = 0,-3.89967155456543,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 10
-				attN = bottom, 12
-				mass = 0.5
-				temp = 310.930020091765
-				tempExt = 310.382780839645
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = fuelTank.long
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 176.162539156274
-					maxAmount = 360
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 215.309759257748
-					maxAmount = 440
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = fuelTank
-				cid = 4294490964
-				uid = 3602163341
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = 0,-6.75286102294922,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 11
-				attN = bottom, 13
-				mass = 0.25
-				temp = 311.435168801927
-				tempExt = 311.085421515654
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = fuelTank
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 180
-					maxAmount = 180
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 220
-					maxAmount = 220
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = liquidEngine3
-				cid = 4294453748
-				uid = 3556461233
-				mid = 3171521279
-				launchID = 174
-				parent = 12
-				position = 0,-7.93598079681396,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = 2
-				sepI = 1
-				sidx = 0
-				attm = 0
-				srfN = , -1
-				attN = top, 12
-				attN = bottom, -1
-				mass = 0.5
-				temp = 311.507461574502
-				tempExt = 311.062029748497
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = liquidEngine3
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleEngines
-					isEnabled = True
-					staged = True
-					flameout = False
-					EngineIgnited = True
-					engineShutdown = False
-					currentThrottle = 0
-					thrustPercentage = 100
-					manuallyOverridden = False
-					stagingEnabled = True
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGimbal
-					isEnabled = True
-					gimbalLock = False
-					gimbalLimiter = 100
-					gimbalActive = True
-					stagingEnabled = True
-					gimbalLock_UIFlight
-					{
-						controlEnabled = True
-					}
-					gimbalLimiter_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 1
-					}
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						LockAction
-						{
-							actionGroup = None
-						}
-						FreeAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = FXModuleAnimateThrottle
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleJettison
-					isEnabled = True
-					isJettisoned = True
-					shroudHideOverride = False
-					stagingEnabled = True
-					shroudHideOverride_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-						Jettison
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Jettison
-							guiName = Jettison
-							category = Jettison
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						JettisonAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleSurfaceFX
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = RCSBlock
-				cid = 4294482346
-				uid = 1832070470
-				mid = 3171521279
-				launchID = 174
-				parent = 12
-				position = -0.677036583423615,-7.41687107086182,0.000742293894290924
-				rotation = -7.486784E-23,0,-1.842297E-15,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 15
-				sym = 16
-				srfN = srfAttach, 12
-				mass = 0.05
-				temp = 311.44296202965
-				tempExt = 311.013615485066
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = RCSBlock
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleRCS
-					isEnabled = True
-					rcsEnabled = True
-					thrustPercentage = 100
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					enableX = True
-					enableY = True
-					enableZ = True
-					stagingEnabled = True
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Disable
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Disable RCS Port
-							guiName = Disable RCS Port
-							category = Disable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Enable
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Enable RCS Port
-							guiName = Enable RCS Port
-							category = Enable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = RCSBlock
-				cid = 4294349272
-				uid = 3502393935
-				mid = 3171521279
-				launchID = 174
-				parent = 12
-				position = 0.339161276817322,-7.41687107086182,0.585959792137146
-				rotation = -1.595476E-15,0.8660254,-9.211485E-16,0.5
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 14
-				sym = 16
-				srfN = srfAttach, 12
-				mass = 0.05
-				temp = 311.443000055284
-				tempExt = 311.013633431013
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = RCSBlock
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleRCS
-					isEnabled = True
-					rcsEnabled = True
-					thrustPercentage = 100
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					enableX = True
-					enableY = True
-					enableZ = True
-					stagingEnabled = True
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Disable
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Disable RCS Port
-							guiName = Disable RCS Port
-							category = Disable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Enable
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Enable RCS Port
-							guiName = Enable RCS Port
-							category = Enable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = RCSBlock
-				cid = 4294349188
-				uid = 814260137
-				mid = 3171521279
-				launchID = 174
-				parent = 12
-				position = 0.337875485420227,-7.41687107086182,-0.586702227592468
-				rotation = -1.595476E-15,0.8660254,9.211489E-16,-0.5000001
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 14
-				sym = 15
-				srfN = srfAttach, 12
-				mass = 0.05
-				temp = 311.442966966804
-				tempExt = 311.013617813349
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = RCSBlock
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleRCS
-					isEnabled = True
-					rcsEnabled = True
-					thrustPercentage = 100
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					enableX = True
-					enableY = True
-					enableZ = True
-					stagingEnabled = True
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Disable
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Disable RCS Port
-							guiName = Disable RCS Port
-							category = Disable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Enable
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Enable RCS Port
-							guiName = Enable RCS Port
-							category = Enable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = RCSBlock
-				cid = 4294480922
-				uid = 2161535507
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = -0.676247775554657,-2.39986991882324,0.000742293894290924
-				rotation = -7.486784E-23,0,-1.842297E-15,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 18
-				sym = 19
-				sym = 20
-				srfN = srfAttach, 11
-				mass = 0.05
-				temp = 310.890173945758
-				tempExt = 310.378325761678
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = RCSBlock
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleRCS
-					isEnabled = True
-					rcsEnabled = True
-					thrustPercentage = 100
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					enableX = True
-					enableY = True
-					enableZ = True
-					stagingEnabled = True
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Disable
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Disable RCS Port
-							guiName = Disable RCS Port
-							category = Disable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Enable
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Enable RCS Port
-							guiName = Enable RCS Port
-							category = Enable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = RCSBlock
-				cid = 4294479986
-				uid = 809033110
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = 0.000742301344871521,-2.39986991882324,0.676247775554657
-				rotation = -1.302701E-15,0.7071068,-1.302701E-15,0.7071068
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 17
-				sym = 19
-				sym = 20
-				srfN = srfAttach, 11
-				mass = 0.05
-				temp = 310.889682775991
-				tempExt = 310.377586434974
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = RCSBlock
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleRCS
-					isEnabled = True
-					rcsEnabled = True
-					thrustPercentage = 100
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					enableX = True
-					enableY = True
-					enableZ = True
-					stagingEnabled = True
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Disable
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Disable RCS Port
-							guiName = Disable RCS Port
-							category = Disable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Enable
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Enable RCS Port
-							guiName = Enable RCS Port
-							category = Enable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = RCSBlock
-				cid = 4294479902
-				uid = 1102131992
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = 0.676248013973236,-2.39986991882324,-0.00074237585067749
-				rotation = -1.842297E-15,1,1.553972E-22,-4.371139E-08
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 17
-				sym = 18
-				sym = 20
-				srfN = srfAttach, 11
-				mass = 0.05
-				temp = 310.889833152726
-				tempExt = 310.377693797014
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = RCSBlock
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleRCS
-					isEnabled = True
-					rcsEnabled = True
-					thrustPercentage = 100
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					enableX = True
-					enableY = True
-					enableZ = True
-					stagingEnabled = True
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Disable
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Disable RCS Port
-							guiName = Disable RCS Port
-							category = Disable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Enable
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Enable RCS Port
-							guiName = Enable RCS Port
-							category = Enable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = RCSBlock
-				cid = 4294479818
-				uid = 2364856426
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = -0.000742301344871521,-2.39986991882324,-0.676247775554657
-				rotation = -1.302701E-15,0.7071068,1.302701E-15,-0.7071068
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 17
-				sym = 18
-				sym = 19
-				srfN = srfAttach, 11
-				mass = 0.05
-				temp = 310.890669242596
-				tempExt = 310.378333537358
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = RCSBlock
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleRCS
-					isEnabled = True
-					rcsEnabled = True
-					thrustPercentage = 100
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					enableX = True
-					enableY = True
-					enableZ = True
-					stagingEnabled = True
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Disable
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Disable RCS Port
-							guiName = Disable RCS Port
-							category = Disable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Enable
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiActiveUncommand = False
-							guiIcon = Enable RCS Port
-							guiName = Enable RCS Port
-							category = Enable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4294476750
-				uid = 3462859458
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = -1.16064071655273,-3.76336097717285,2.98023223876953E-08
-				rotation = -7.486784E-23,0,-1.842297E-15,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 22
-				sym = 23
-				sym = 24
-				srfN = srfAttach, 11
-				mass = 0.1
-				temp = 310.36174830168
-				tempExt = 310.051258136493
-				tempExtUnexp = 4
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = False
-					deploy = False
-					deployInvert = False
-					stagingEnabled = True
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					deploy_UIFlight
-					{
-						controlEnabled = True
-					}
-					deployInvert_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = None
-						}
-						ActionExtend
-						{
-							actionGroup = None
-						}
-						ActionRetract
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4294476226
-				uid = 3776507484
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = 0,-3.76336097717285,1.16064035892487
-				rotation = -1.302701E-15,0.7071068,-1.302701E-15,0.7071068
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 21
-				sym = 23
-				sym = 24
-				srfN = srfAttach, 11
-				mass = 0.1
-				temp = 310.431692371822
-				tempExt = 309.853763097748
-				tempExtUnexp = 4
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = False
-					deploy = False
-					deployInvert = False
-					stagingEnabled = True
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					deploy_UIFlight
-					{
-						controlEnabled = True
-					}
-					deployInvert_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = None
-						}
-						ActionExtend
-						{
-							actionGroup = None
-						}
-						ActionRetract
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4294476182
-				uid = 2498536478
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = 1.16064023971558,-3.76336097717285,-1.564621925354E-07
-				rotation = -1.842297E-15,1,1.553972E-22,-4.371139E-08
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 21
-				sym = 22
-				sym = 24
-				srfN = srfAttach, 11
-				mass = 0.1
-				temp = 310.38725509895
-				tempExt = 309.823249439668
-				tempExtUnexp = 4
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = False
-					deploy = False
-					deployInvert = False
-					stagingEnabled = True
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					deploy_UIFlight
-					{
-						controlEnabled = True
-					}
-					deployInvert_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = None
-						}
-						ActionExtend
-						{
-							actionGroup = None
-						}
-						ActionRetract
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4294476138
-				uid = 1131855995
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = -1.04308128356934E-07,-3.76336097717285,-1.16063964366913
-				rotation = -1.302701E-15,0.7071068,1.302701E-15,-0.7071068
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 21
-				sym = 22
-				sym = 23
-				srfN = srfAttach, 11
-				mass = 0.1
-				temp = 310.407498250285
-				tempExt = 310.05896342843
-				tempExtUnexp = 4
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = False
-					deploy = False
-					deployInvert = False
-					stagingEnabled = True
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					deploy_UIFlight
-					{
-						controlEnabled = True
-					}
-					deployInvert_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = None
-						}
-						ActionExtend
-						{
-							actionGroup = None
-						}
-						ActionRetract
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = rcsTankRadialLong
-				cid = 4294349942
-				uid = 88502591
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = -0.222290903329849,-5.1815299987793,-0.22229091823101
-				rotation = 7.905752E-09,-0.3826835,-3.27467E-09,-0.9238796
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 26
-				sym = 27
-				srfN = srfAttach, 11
-				mass = 0.15
-				temp = 311.108991322789
-				tempExt = 310.591949953542
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = rcsTankRadialLong
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				RESOURCE
-				{
-					name = MonoPropellant
-					amount = 117.615417506264
-					maxAmount = 150
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = rcsTankRadialLong
-				cid = 4294349558
-				uid = 200892970
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = -0.0813640058040619,-5.1815299987793,0.303654968738556
-				rotation = 1.116928E-09,-0.9914449,-8.483917E-09,-0.1305261
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 25
-				sym = 27
-				srfN = srfAttach, 11
-				mass = 0.15
-				temp = 311.078935772609
-				tempExt = 310.563153604391
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = rcsTankRadialLong
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				RESOURCE
-				{
-					name = MonoPropellant
-					amount = 117.615417506264
-					maxAmount = 150
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = rcsTankRadialLong
-				cid = 4294349530
-				uid = 468829061
-				mid = 3171521279
-				launchID = 174
-				parent = 11
-				position = 0.303655087947845,-5.1815299987793,-0.0813642144203186
-				rotation = -6.788824E-09,-0.6087614,-5.209246E-09,0.7933534
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sym = 25
-				sym = 26
-				srfN = srfAttach, 11
-				mass = 0.15
-				temp = 311.078990646532
-				tempExt = 310.563194927875
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Flags/kerbal2
-				rTrf = rcsTankRadialLong
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				RESOURCE
-				{
-					name = MonoPropellant
-					amount = 117.615417506264
-					maxAmount = 150
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = False, 10301407.1549607
-				Gear = True, 0
-				Light = False, 0
-				RCS = True, 10301441.99496
-				SAS = True, 10301158.2749663
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			TARGET
-			{
-				type = Vessel
-				vesselID = 3b34d80a-5ab4-4215-8609-0d4105c6c1ea
-			}
-			CTRLSTATE
-			{
-				pitch = 0.05313189
-				yaw = -0.02035987
-				roll = 0.002154157
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-		}
 	}
 	ROSTER
 	{
@@ -38554,56 +33720,6 @@ GAME
 		}
 		KERBAL
 		{
-			name = Dedie Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.587896
-			dumb = 0.6407067
-			badS = False
-			tour = True
-			state = Assigned
-			ToD = 0
-			idx = 0
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-				0 = Flight,Kerbin
-				0 = Suborbit,Kerbin
-				0 = Orbit,Kerbin
-			}
-		}
-		KERBAL
-		{
-			name = Debchell Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.8460314
-			dumb = 0.8458136
-			badS = False
-			tour = True
-			state = Assigned
-			ToD = 0
-			idx = 0
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-				0 = Flight,Kerbin
-				0 = Suborbit,Kerbin
-				0 = Orbit,Kerbin
-			}
-		}
-		KERBAL
-		{
 			name = Paca Kerman
 			gender = Female
 			type = Crew
@@ -38612,32 +33728,68 @@ GAME
 			dumb = 0.3632068
 			badS = False
 			tour = False
-			state = Assigned
+			state = Available
 			ToD = 0
-			idx = 0
+			idx = -1
 			CAREER_LOG
 			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
+				flight = 1
 				0 = Orbit,Kerbin
 				0 = ExitVessel,Kerbin
 				0 = BoardVessel,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Flight,Kerbin
+				0 = Land,Kerbin
+				0 = Recover
+			}
+			FLIGHT_LOG
+			{
+				flight = 1
 			}
 		}
 	}
 	MESSAGESYSTEM
 	{
-		flash = True
+		flash = False
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Ferry two tourists safely to their destinations.</>~n~nThe tour was a success! Dedie and Debchell had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><#8BED8B>Completion Rewards:</></> ~n<#E0D503>¡19   </>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Parameter Complete
+			message = <b>Ferry two tourists safely to their destinations.</>~n~n'Dedie's Travel Itinerary' complete!~n~n<#B4D455>£9,263 <#feb200>(-488)</>  </><#6DCFF6>©0 <#caff00>(+0)</>  </>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Parameter Complete
+			message = <b>Ferry two tourists safely to their destinations.</>~n~n'Debchell's Travel Itinerary' complete!~n~n<#B4D455>£9,263 <#feb200>(-488)</>  </><#6DCFF6>©0 <#caff00>(+0)</>  </>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Rescue Paca Kerman from orbit of Kerbin.</>~n~nWell done! Paca Kerman has been recovered in one piece and is now enjoying a thorough debriefing from the comfort of her quarantine cell.~n~nPaca Kerman is now part of your crew roster, and may be assigned to future missions.~n~n<b><#8BED8B>Completion Rewards:</></> ~n<#B4D455>£50,787 <#feb200>(-2,673)</>  </>~n<#6DCFF6>©<#caff00>(+0)</>  </>~n<#E0D503>¡9   </>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
 		MESSAGE
 		{
 			title = Paca Kerman was added to the crew!
 			message = <b>Rescue Paca Kerman from orbit of Kerbin.</>~n~nPaca Kerman is now part of the space program crew.
 			color = 2
 			icon = 5
-			read = False
+			read = True
 		}
 		MESSAGE
 		{
