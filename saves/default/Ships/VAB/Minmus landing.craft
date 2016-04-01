@@ -2,7 +2,7 @@ ship = Minmus landing
 version = 1.0.5
 description = 
 type = VAB
-size = 9.722129,23.61911,8.773552
+size = 9.72213,23.61911,8.773554
 PART
 {
 	part = mk1pod_4292972502
@@ -1817,7 +1817,6 @@ PART
 	link = RCSBlock_4292879148
 	link = RCSBlock_4292876556
 	link = RCSBlock_4292876472
-	link = sensorAtmosphere_4294393842
 	link = sensorThermometer_4294391488
 	link = sensorBarometer_4294390506
 	link = mediumDishAntenna_4294388694
@@ -2774,7 +2773,7 @@ PART
 	pos = -1.603247,26.04848,4.847114
 	attPos = 0,0,0
 	attPos0 = 2.581082E-08,0.5156778,0.3632928
-	rot = -5.278881E-08,0.7933534,7.80713E-08,-0.6087615
+	rot = -5.278881E-08,0.7933533,7.80713E-08,-0.6087615
 	attRot = 0,0,0,1
 	attRot0 = -0.5000001,0.4999999,-0.5,0.5
 	mir = 1,1,1
@@ -4663,7 +4662,7 @@ PART
 	pos = -5.017988,26.57346,7.896431
 	attPos = 0,0,0
 	attPos0 = -5.960463E-08,7.429159,-1.212083E-07
-	rot = 8.065047E-14,8.84273E-08,6.652617E-14,1
+	rot = 9.811784E-14,8.84273E-08,9.310914E-14,1
 	attRot = 0,0,0,1
 	attRot0 = 1.657617E-07,0.6087626,7.524496E-08,0.7933524
 	mir = 1,1,1
@@ -4989,7 +4988,7 @@ PART
 	pos = -6.01006,26.56127,8.445307
 	attPos = 0,0,0
 	attPos0 = -3.099401E-08,7.429159,1.151104E-07
-	rot = 6.524868E-14,8.84273E-08,9.045897E-15,1
+	rot = 8.098261E-14,8.84273E-08,9.427553E-15,1
 	attRot = 0,0,0,1
 	attRot0 = 1.544635E-07,0.4994733,9.633168E-08,0.8663294
 	mir = 1,1,1
@@ -5109,10 +5108,10 @@ PART
 {
 	part = strutConnector_4292897168
 	partName = CompoundPart
-	pos = -6.427746,26.91019,8.353098
+	pos = -6.427747,26.91019,8.353098
 	attPos = 0,0,0
 	attPos0 = -0.4176829,0.348919,-0.09220881
-	rot = 2.920192E-07,-7.997236E-07,-0.3585135,0.9335248
+	rot = 2.786592E-07,-7.4215E-07,-0.3585135,0.9335247
 	attRot = 0,0,0,1
 	attRot0 = 2.595853E-07,-6.369339E-07,-0.3585135,0.9335246
 	mir = 1,1,1
@@ -5195,7 +5194,7 @@ PART
 {
 	part = strutConnector_4292895022
 	partName = CompoundPart
-	pos = -6.155036,27.10893,8.298281
+	pos = -6.155037,27.10893,8.298281
 	attPos = 0,0,0
 	attPos0 = -0.1449722,0.547657,-0.1470261
 	rot = -0.2620771,0.425814,0.4539285,-0.7375281
@@ -5745,10 +5744,10 @@ PART
 {
 	part = noseCone_4292946260
 	partName = Part
-	pos = -0.5387336,23.263,7.569295
+	pos = -0.5387335,23.263,7.569295
 	attPos = 0,0,0
 	attPos0 = -7.45075E-09,3.92,2.276478E-07
-	rot = 5.629149E-14,0.8660254,-5.231386E-15,0.5000002
+	rot = 7.219783E-14,0.8660254,-6.256477E-15,0.5000002
 	attRot = 0,0,0,1
 	attRot0 = 1.379024E-07,0.5,7.9618E-08,0.8660254
 	mir = 1,1,1
@@ -5866,7 +5865,7 @@ PART
 {
 	part = radialDecoupler_4292939568
 	partName = Part
-	pos = -0.005407333,18.88796,7.90388
+	pos = -0.005407095,18.88796,7.90388
 	attPos = 0,0,0
 	attPos0 = -0.02309557,-0.4550345,0.6291652
 	rot = -1.87125E-07,0.9238791,-3.290057E-08,0.3826848
@@ -6037,7 +6036,7 @@ PART
 {
 	part = MassiveBooster_4292935830
 	partName = Part
-	pos = 0.6534159,19.1443,8.371212
+	pos = 0.6534164,19.1443,8.371212
 	attPos = 0,0,0
 	attPos0 = -0.7963098,0.2563359,0.1354063
 	rot = -1.480449E-07,0.3826822,1.059314E-07,0.9238802
@@ -6243,7 +6242,7 @@ PART
 {
 	part = noseCone_4292925938
 	partName = Part
-	pos = 0.6534126,26.57346,8.371208
+	pos = 0.6534131,26.57346,8.371208
 	attPos = 0,0,0
 	attPos0 = 7.450591E-08,7.429159,3.55629E-07
 	rot = -4.939474E-14,0.8660257,-4.567426E-14,0.5000001
@@ -6278,7 +6277,7 @@ PART
 {
 	part = strutConnector_4292921024
 	partName = CompoundPart
-	pos = 0.5698082,27.1308,8.531507
+	pos = 0.5698087,27.1308,8.531507
 	attPos = 0,0,0
 	attPos0 = -0.09702054,0.5573411,-0.1525534
 	rot = 0.2620754,-0.4258111,0.4539298,-0.7375295
@@ -6364,7 +6363,7 @@ PART
 {
 	part = MassiveBooster_4292913322
 	partName = Part
-	pos = 1.624792,19.13211,8.955933
+	pos = 1.624793,19.13211,8.955934
 	attPos = 0,0,0
 	attPos0 = 0.27341,-0.01218836,1.100326
 	rot = -1.606574E-07,0.5005267,8.560345E-08,0.8657213
@@ -6569,10 +6568,10 @@ PART
 {
 	part = noseCone_4292909410
 	partName = Part
-	pos = 1.624793,26.56127,8.955933
+	pos = 1.624794,26.56127,8.955934
 	attPos = 0,0,0
 	attPos0 = 7.524925E-08,7.429159,6.375368E-07
-	rot = -1.238129E-13,0.8660256,5.215102E-14,0.5000001
+	rot = -1.448915E-13,0.8660256,7.247918E-14,0.5000001
 	attRot = 0,0,0,1
 	attRot0 = 1.544635E-07,0.4994732,9.633168E-08,0.8663294
 	mir = 1,1,1
@@ -6606,7 +6605,7 @@ PART
 {
 	part = strutConnector_4292898620
 	partName = CompoundPart
-	pos = 1.718386,27.15896,8.995146
+	pos = 1.718387,27.15896,8.995146
 	attPos = 0,0,0
 	attPos0 = -0.0807552,0.5976935,0.06144913
 	rot = -0.5062929,0.8226053,-0.1356619,0.2204184
@@ -6692,7 +6691,7 @@ PART
 {
 	part = strutConnector_4292895918
 	partName = CompoundPart
-	pos = 1.753779,26.91019,9.363763
+	pos = 1.75378,26.91019,9.363764
 	attPos = 0,0,0
 	attPos0 = -0.4176839,0.348919,-0.09220841
 	rot = -0.3104817,0.8084558,-0.1792571,0.466763
@@ -6778,7 +6777,7 @@ PART
 {
 	part = strutConnector_4292893892
 	partName = CompoundPart
-	pos = 1.569951,27.10893,9.154998
+	pos = 1.569952,27.10893,9.154999
 	attPos = 0,0,0
 	attPos0 = -0.1449732,0.547657,-0.1470258
 	rot = 0.2620752,-0.4258108,0.4539298,-0.7375296
@@ -7826,10 +7825,10 @@ PART
 {
 	part = noseCone_4292925906
 	partName = Part
-	pos = -1.771121,26.57346,3.222239
+	pos = -1.771121,26.57346,3.222238
 	attPos = 0,0,0
 	attPos0 = -2.980231E-08,7.429159,-1.212085E-07
-	rot = -6.453703E-14,0.8660255,1.928177E-14,-0.5000002
+	rot = -7.898188E-14,0.8660255,3.372662E-14,-0.5000002
 	attRot = 0,0,0,1
 	attRot0 = 1.657617E-07,0.6087626,7.524496E-08,0.7933524
 	mir = 1,1,1
@@ -7861,7 +7860,7 @@ PART
 {
 	part = strutConnector_4292920958
 	partName = CompoundPart
-	pos = -1.590495,27.1308,3.214495
+	pos = -1.590495,27.1308,3.214494
 	attPos = 0,0,0
 	attPos0 = -0.09702029,0.5573411,-0.1525535
 	rot = 0.5241522,-0.8516248,1.02531E-06,-1.606066E-06
@@ -7947,10 +7946,10 @@ PART
 {
 	part = MassiveBooster_4292913250
 	partName = Part
-	pos = -1.750426,19.13211,2.088639
+	pos = -1.750426,19.13211,2.088638
 	attPos = 0,0,0
 	attPos0 = 0.2734099,-0.01218836,1.100326
-	rot = -6.193967E-09,0.9999999,1.819351E-07,-0.0006082212
+	rot = -6.193972E-09,0.9999999,1.819351E-07,-0.0006082212
 	attRot = 0,0,0,1
 	attRot0 = -5.827714E-14,0.1311306,7.080043E-15,0.9913651
 	mir = 1,1,1
@@ -8152,7 +8151,7 @@ PART
 {
 	part = noseCone_4292909378
 	partName = Part
-	pos = -1.750426,26.56127,2.088644
+	pos = -1.750426,26.56127,2.088643
 	attPos = 0,0,0
 	attPos0 = -2.216608E-09,7.429159,1.22859E-07
 	rot = -7.856685E-15,0.8660255,-2.326774E-14,-0.5000002
@@ -8189,7 +8188,7 @@ PART
 {
 	part = strutConnector_4292898554
 	partName = CompoundPart
-	pos = -1.763265,27.15896,1.987983
+	pos = -1.763265,27.15896,1.987982
 	attPos = 0,0,0
 	attPos0 = -0.08075444,0.5976935,0.06144881
 	rot = -0.3706334,0.6021904,0.3706315,-0.602188
@@ -8275,7 +8274,7 @@ PART
 {
 	part = strutConnector_4292895852
 	partName = CompoundPart
-	pos = -1.461729,26.91019,1.773023
+	pos = -1.461729,26.91019,1.773022
 	attPos = 0,0,0
 	attPos0 = -0.4176831,0.348919,-0.09220873
 	rot = -0.3104819,0.8084565,0.1792565,-0.4667617
@@ -8361,7 +8360,7 @@ PART
 {
 	part = strutConnector_4292893826
 	partName = CompoundPart
-	pos = -1.550611,27.10893,2.036606
+	pos = -1.550611,27.10893,2.036605
 	attPos = 0,0,0
 	attPos0 = -0.1449724,0.547657,-0.147026
 	rot = 0.5241522,-0.8516248,1.109604E-06,-1.94324E-06
@@ -8536,7 +8535,7 @@ PART
 	pos = -2.971272,22.33385,5.781423
 	attPos = 0,0,0
 	attPos0 = -0.9260387,-1.00927,-0.7152051
-	rot = -2.214744E-09,-0.2588187,8.265552E-09,0.9659259
+	rot = -2.214744E-09,-0.2588187,8.265553E-09,0.9659259
 	attRot = 0,0,0,1
 	attRot0 = -2.214744E-09,-0.2588187,8.265547E-09,0.9659259
 	mir = 1,1,1
@@ -9125,156 +9124,6 @@ PART
 }
 PART
 {
-	part = sensorAtmosphere_4294393842
-	partName = Part
-	pos = -2.669466,31.27718,6.496628
-	attPos = 0,0,0
-	attPos0 = -0.6242325,0.4425659,0
-	rot = 1.302701E-15,0.7071068,-1.302701E-15,0.7071068
-	attRot = 0,0,0,1
-	attRot0 = 1.302701E-15,0.7071068,-1.302701E-15,0.7071068
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 2
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	srfN = srfAttach,fuelTank_4292974414
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleScienceExperiment
-		isEnabled = True
-		Deployed = False
-		Inoperable = False
-		stagingEnabled = True
-		EVENTS
-		{
-			DeployExperiment
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Deploy
-				guiName = Deploy
-				category = Deploy
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			CollectDataExternalEvent
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = True
-				unfocusedRange = 1.5
-				externalToEVAOnly = True
-			}
-			ReviewDataEvent
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Review Data
-				guiName = Review Data
-				category = Review Data
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ResetExperiment
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Reset
-				guiName = Reset
-				category = Reset
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DeployExperimentExternal
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Deploy
-				guiName = Deploy
-				category = Deploy
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ResetExperimentExternal
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Reset
-				guiName = Reset
-				category = Reset
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			CleanUpExperimentExternal
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Restore
-				guiName = Restore
-				category = Restore
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			ResetAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
 	part = sensorThermometer_4294391488
 	partName = Part
 	pos = -2.49497,31.17337,6.046891
@@ -9662,7 +9511,7 @@ PART
 	pos = -1.402437,31.10483,6.668865
 	attPos = 0,0,0
 	attPos0 = 0.6427959,0.270216,0.1722369
-	rot = 0.5609856,0.4304594,-0.4304593,0.5609856
+	rot = 0.5609856,0.4304594,-0.4304592,0.5609856
 	attRot = 0,0,0,1
 	attRot0 = 0.5609856,0.4304594,-0.4304593,0.5609856
 	mir = 1,1,1
@@ -9819,7 +9668,7 @@ PART
 				guiActive = True
 				guiActiveUncommand = False
 				guiIcon = Toggle Transmit Incomplete
-				guiName = Toggle Transmit Incomplete
+				guiName = Require Complete
 				category = Toggle Transmit Incomplete
 				guiActiveUnfocused = False
 				unfocusedRange = 2
